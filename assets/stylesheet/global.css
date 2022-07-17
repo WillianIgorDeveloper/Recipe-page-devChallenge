@@ -1,0 +1,241 @@
+/*==================== 
+    Stylization Mobile Frist 
+====================*/
+
+/*========== REM measure ==========*/
+/* For screens bigger than 1080px: 16px(defalt) */
+/* For screens smaller than 1080px*/
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%; /* 15px */
+    }
+}
+/* Para telas mmenores que 720px*/
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%; /* 14px */
+    }
+}
+
+
+
+/*========== Root ==========*/
+:root {
+    /*========== Colors ==========*/
+    --black-50: #BDBDBD;
+    --black-100: #828282;
+    --black-200: #4F4F4F;
+    --black-300: #333333;
+    --black-400: #000000;
+
+    --orange: #F2994A;
+}
+
+
+
+/*========== Global ==========*/
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #FAFAFA;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--black-300);
+    gap: 2rem;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*========== Main ==========*/
+main {
+    flex: 1;
+}
+.cheesecake {
+    margin: 1.5rem 0;
+    border-radius: 0.75rem;
+}
+main section {
+    padding: 1.25rem 0;
+}
+
+    /*========== Header ==========*/
+    header h1 {
+        font: 700 1.5rem 'Playfair Display', serif;
+        color: var(--black-400);
+        margin: 1.25rem 0;
+    }
+    header div {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    header div img {
+        margin-top: .25rem;
+        width: 1rem;
+    }
+    header div p {
+        font: 500 0.75rem 'Montserrat', sans-serif;
+        color: var(--black-200);
+    }
+
+    /*========== Recipe Card ==========*/
+    .recipe-card {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .card:first-child {
+        float: unset;
+        margin: unset;
+    }
+    .card:first-child span, .card:first-child div p:last-child {
+        color: var(--orange);
+    }
+    .card {
+        float: left;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        margin-top: 1rem;
+        width: 8rem;
+    }
+    .card div p:first-child {
+        color: var(--black-50);
+        font-weight: 700;
+        font-size: 0.5rem;
+    }
+    .card div p:last-child {
+        font-weight: 500;
+        font-size: 0.75rem;
+    }
+
+    /*========== Section Ingredients ==========*/
+    .ingredients {
+        clear: both;
+    }
+    .ingredients h2 {
+        font: 700 1.25rem 'Playfair Display', serif;
+    }
+    .ingredients h3 {
+        font: 400 1rem 'Playfair Display', serif;
+        margin: 1.25rem 0;
+    }
+    .steps {
+        margin: 1rem 0;
+        display: flex;
+        align-items: flex-start;
+        gap: .5rem;
+        font: 400 .75rem 'Montserrat', sans-serif;
+    }
+
+    /*========== Section Instructions ==========*/
+    .instructions h2 {
+        font: 700 1.5rem 'Playfair Display', serif;
+        margin-bottom: 1.5rem;
+    }
+    .instruction {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    .instruction h3 {
+        font: 700 1.5rem 'Playfair Display', serif;
+        color: white;
+    }
+    .h3-container h3 {
+        background-color: var(--orange);
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: .25rem;
+        text-align: center;
+    }
+    .instruction p {
+        font: 400 1rem 'Montserrat', sans-serif;
+    }
+
+.source {
+    font: 400 0.75rem 'Montserrat', sans-serif;
+    color: var(--black-50);
+}
+
+
+/*========== Footer ==========*/
+footer p{
+    font: 700 .75rem 'Montserrat', sans-serif;
+    color: var(--black-100);
+    text-align: center;
+}
+
+
+
+/*==================== 
+    Screens bigger than 768px
+====================*/
+@media (min-width: 768px) {
+    body {
+        padding: 1.25rem;
+    }
+    header p {
+        max-width: 60%;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header div p {
+        font-size: 1rem;
+    }
+    .card div p:first-child {
+        font-size: 0.75rem;
+    }
+    .card div p:last-child {
+        font-size: 1rem;
+    }
+    .recipe-card {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        border-radius: 1rem;
+        padding: 2.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .card {
+        float: unset;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        margin-top: 1rem;
+        width: unset;
+    }
+    .text-container {
+        float: left;
+        width: 60%;
+    }
+    .ingredients h2 {
+        font-size: 1.5rem;
+    }
+    .ingredients h3 {
+        font-size: 1.25rem;
+    }
+    .steps {
+        font-size: 1rem;
+    }
+    .source {
+        font-size: 1rem;
+        clear: both;
+    }
+}
