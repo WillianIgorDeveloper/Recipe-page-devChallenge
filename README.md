@@ -1,4 +1,4 @@
-<!-- <h1 align="center">My team page</h1>
+<h1 align="center">Recipe page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -11,9 +11,5 @@
    <li>HTML</li>
    <li>CSS</li>
 </ul>
-<p>JavaScript library</p>
-<ul>
-   <li>ScrollReveal</li>
-</ul>
 
-<h2 align="center"><a href="https://willianprof.github.io/My-team-page-devChallenges/">Demo</a></h2> -->
+<h2 align="center"><a href="https://willianprof.github.io/Recipe-page-devChallenge/">Demo</a></h2>
