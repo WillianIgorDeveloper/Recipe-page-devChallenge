@@ -12,4 +12,4 @@
    <li>CSS</li>
 </ul>
 
-<h2 align="center"><a href="https://willianprof.github.io/Recipe-page-devChallenge/">Demo</a></h2>
+<h2 align="center"><a href="https://yellowmoonastronaut.github.io/Recipe-page-devChallenge/">Demo</a></h2>
